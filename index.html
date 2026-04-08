@@ -1,22 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public Image Gallery</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Imagens · CNIE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>📸 Image Gallery</h1>
-            <p>A collection of publicly shared images with direct download links</p>
-        </header>
-        <div id="gallery" class="gallery"></div>
-        <footer>
-            <p>Repository: <a href="https://github.com/cnie-int/gallery" target="_blank">cnie-int/gallery</a></p>
-        </footer>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <span class="brand-label">CNIE · SVS/MS</span>
+        <h1>Galeria de Imagens</h1>
+      </div>
+      <p class="header-sub">Repositório público de imagens para painéis e relatórios de vigilância epidemiológica</p>
     </div>
-    <script src="gallery.js"></script>
+  </header>
+
+  <main class="site-main">
+    <div class="controls">
+      <div id="tag-cloud" class="tag-cloud"></div>
+    </div>
+    <div id="gallery" class="gallery"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Repositório: <a href="https://github.com/cnie-int/gallery" target="_blank" rel="noopener">cnie-int/gallery</a></span>
+      <span>Links públicos via GitHub Pages &amp; raw.githubusercontent.com</span>
+    </div>
+  </footer>
+
+  <script src="gallery.js"></script>
 </body>
 </html>

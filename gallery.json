@@ -1,1 +1,16 @@
-{"gallery": {"title": "Public Image Gallery", "description": "A collection of publicly shared images"}, "images": [{"filename": "barra_neutra.jpg", "title": "Barra Neutra", "description": "Replace with your images", "uploadDate": "2026-04-08", "tags": ["example"], "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/barra_neutra.jpg"}]}
+{
+  "gallery": {
+    "title": "Galeria de Imagens · CNIE",
+    "description": "Repositório público de imagens do Centro Nacional de Inteligência Epidemiológica"
+  },
+  "images": [
+    {
+      "filename": "barra_neutra.png",
+      "title": "Barra Neutra",
+      "description": "Imagem de referência para painéis e relatórios",
+      "uploadDate": "2026-04-08",
+      "tags": ["referência", "painel"],
+      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/barra_neutra.png"
+    }
+  ]
+}

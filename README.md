@@ -1,29 +1,60 @@
-# 📸 Image Gallery
+# 📸 Galeria de Imagens · CNIE
 
-A public image gallery library with shareable links hosted on GitHub Pages.
+Repositório público de imagens para painéis e relatórios de vigilância epidemiológica.
 
-## 📁 Structure
+**URL da galeria:** https://cnie-int.github.io/gallery/
 
-- `images/` - Store your image files here
-- `gallery.json` - Manifest file containing image metadata and public links
-- `index.html` - Web-based gallery interface
-- `style.css` - Gallery styling
+---
 
-## 🔗 Public Links
+## 📁 Estrutura
 
-All images are automatically available via GitHub Pages at:
 ```
-https://cnie-int.github.io/gallery/images/[filename]
+gallery/
+├── images/          ← arquivos de imagem
+├── gallery.json     ← manifesto (metadados + links)
+├── index.html       ← interface da galeria
+├── style.css        ← estilização
+└── gallery.js       ← lógica de renderização
 ```
 
-## 📝 Adding Images
+---
 
-1. Add image files to the `images/` directory
-2. Update `gallery.json` with image metadata
-3. Push changes to trigger GitHub Pages update
+## 🔗 Links públicos
 
-## 🖼️ Viewing the Gallery
+Cada imagem fica acessível via dois padrões de URL:
 
-Visit: https://cnie-int.github.io/gallery/
+| Tipo | URL |
+|------|-----|
+| GitHub Pages | `https://cnie-int.github.io/gallery/images/<filename>` |
+| Raw GitHub   | `https://raw.githubusercontent.com/cnie-int/gallery/main/images/<filename>` |
 
-For more information, see the [GitHub Pages documentation](https://pages.github.com/).
+Use o campo `url` no `gallery.json` para definir qual link aparece nos cards.
+
+---
+
+## 📝 Adicionando imagens
+
+1. Copie o arquivo para `images/`
+2. Adicione uma entrada em `gallery.json`:
+
+```json
+{
+  "filename": "minha_imagem.png",
+  "title": "Título exibido",
+  "description": "Descrição opcional",
+  "uploadDate": "2026-04-08",
+  "tags": ["painel", "dengue"],
+  "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/minha_imagem.png"
+}
+```
+
+3. Faça o commit e push — o GitHub Pages atualiza automaticamente.
+
+---
+
+## 🖼️ Funcionalidades da galeria
+
+- **Lightbox** — clique na imagem para ampliar
+- **Copiar link** — botão ⎘ copia o link direto
+- **Filtro por tags** — botões no topo filtram por categoria
+- **Lazy loading** — imagens carregam conforme o scroll
