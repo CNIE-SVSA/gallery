@@ -1,0 +1,1 @@
+{"gallery": {"title": "Public Image Gallery", "description": "A collection of publicly shared images"}, "images": [{"filename": "example.jpg", "title": "Example Image", "description": "Replace with your images", "uploadDate": "2026-04-08", "tags": ["example"], "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/example.jpg"}]}
