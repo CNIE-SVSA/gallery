@@ -5,12 +5,92 @@
   },
   "images": [
     {
+      "filename": "Assinaturas CNIE.ai",
+      "title": "Assinaturas CNIE",
+      "description": "Arquivo vetorial de referência para assinaturas institucionais do CNIE",
+      "uploadDate": "2026-04-08",
+      "tags": ["assinatura", "vetorial", "identidade visual"],
+      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Assinaturas%20CNIE.ai"
+    },
+    {
+      "filename": "Barra de assinaturas.png",
+      "title": "Barra de Assinaturas",
+      "description": "Imagem de referência para composição de barras de assinaturas institucionais",
+      "uploadDate": "2026-04-08",
+      "tags": ["assinatura", "barra", "institucional"],
+      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Barra%20de%20assinaturas.png"
+    },
+    {
+      "filename": "Logo_clara.png",
+      "title": "Logo Clara",
+      "description": "Versão clara da logomarca do CNIE para uso em fundos escuros ou coloridos",
+      "uploadDate": "2026-04-08",
+      "tags": ["logo", "clara", "identidade visual"],
+      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Logo_clara.png"
+    },
+    {
+      "filename": "Logo_clara_vertical.png",
+      "title": "Logo Clara Vertical",
+      "description": "Versão clara vertical da logomarca do CNIE para materiais institucionais",
+      "uploadDate": "2026-04-08",
+      "tags": ["logo", "clara", "vertical", "identidade visual"],
+      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Logo_clara_vertical.png"
+    },
+    {
+      "filename": "Logo_escura.png",
+      "title": "Logo Escura",
+      "description": "Versão escura da logomarca do CNIE para uso em fundos claros",
+      "uploadDate": "2026-04-08",
+      "tags": ["logo", "escura", "identidade visual"],
+      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Logo_escura.png"
+    },
+    {
+      "filename": "Logo_escura_vertical.png",
+      "title": "Logo Escura Vertical",
+      "description": "Versão escura vertical da logomarca do CNIE para materiais institucionais",
+      "uploadDate": "2026-04-08",
+      "tags": ["logo", "escura", "vertical", "identidade visual"],
+      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Logo_escura_vertical.png"
+    },
+    {
+      "filename": "Logo_rgb_colorida.png",
+      "title": "Logo RGB Colorida",
+      "description": "Versão colorida em RGB da logomarca do CNIE para uso digital",
+      "uploadDate": "2026-04-08",
+      "tags": ["logo", "rgb", "colorida", "digital"],
+      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Logo_rgb_colorida.png"
+    },
+    {
+      "filename": "Logo_rgb_colorida_icone.png",
+      "title": "Ícone RGB Colorido",
+      "description": "Versão em ícone da marca CNIE em padrão RGB colorido",
+      "uploadDate": "2026-04-08",
+      "tags": ["ícone", "logo", "rgb", "colorida"],
+      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Logo_rgb_colorida_icone.png"
+    },
+    {
       "filename": "barra_neutra.png",
       "title": "Barra Neutra",
       "description": "Imagem de referência para painéis e relatórios",
       "uploadDate": "2026-04-08",
-      "tags": ["referência", "painel"],
+      "tags": ["referência", "painel", "relatório"],
       "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/barra_neutra.png"
+    },
+    {
+      "filename": "barra_site_cnie.png",
+      "title": "Barra Site CNIE",
+      "description": "Imagem de referência para composição visual do site do CNIE",
+      "uploadDate": "2026-04-08",
+      "tags": ["barra", "site", "cnie", "identidade visual"],
+      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/barra_site_cnie.png"
+    },
+    {
+      "filename": "logo_fundo_rgb.png",
+      "title": "Logo com Fundo RGB",
+      "description": "Versão da logomarca do CNIE com fundo em padrão RGB para uso digital",
+      "uploadDate": "2026-04-08",
+      "tags": ["logo", "fundo", "rgb", "digital"],
+      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/logo_fundo_rgb.png"
     }
   ]
 }
