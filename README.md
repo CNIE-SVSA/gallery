@@ -2,7 +2,7 @@
 
 Repositório público de imagens para painéis e relatórios de vigilância epidemiológica.
 
-**URL da galeria:** https://cnie-int.github.io/gallery/
+**URL da galeria:** https://cnie-svsa.github.io/gallery/
 
 ---
 
