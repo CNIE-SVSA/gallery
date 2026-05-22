@@ -35,7 +35,7 @@ Use o campo `url` no `gallery.json` para definir qual link aparece nos cards.
 ## 📝 Adicionando imagens
 
 1. Copie o arquivo para `images/`
-2. Adicione uma entrada em `gallery.json`:
+2. Adicione essa entrada em `gallery.json`, modificando devidamente os valores:
 
 ```json
 {
