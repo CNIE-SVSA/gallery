@@ -25,8 +25,8 @@ Cada imagem fica acessível via dois padrões de URL:
 
 | Tipo | URL |
 |------|-----|
-| GitHub Pages | `https://cnie-int.github.io/gallery/images/<filename>` |
-| Raw GitHub   | `https://raw.githubusercontent.com/cnie-int/gallery/main/images/<filename>` |
+| GitHub Pages | `https://cnie-svsa.github.io/gallery/images/<filename>` |
+| Raw GitHub   | `https://raw.githubusercontent.com/cnie-svsa/gallery/main/images/<filename>` |
 
 Use o campo `url` no `gallery.json` para definir qual link aparece nos cards.
 
@@ -44,7 +44,7 @@ Use o campo `url` no `gallery.json` para definir qual link aparece nos cards.
   "description": "Descrição opcional",
   "uploadDate": "2026-04-08",
   "tags": ["painel", "dengue"],
-  "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/minha_imagem.png"
+  "url": "https://raw.githubusercontent.com/cnie-svsa/gallery/main/images/minha_imagem.png"
 }
 ```
 
