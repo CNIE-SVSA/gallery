@@ -2,7 +2,7 @@
    Gallery · CNIE — gallery.js
    ========================================================= */
 
-const BASE_URL = 'https://raw.githubusercontent.com/cnie-int/gallery/main/images/';
+const BASE_URL = 'https://raw.githubusercontent.com/cnie-svsa/gallery/main/images/';
 
 let allImages = [];
 let activeTag  = null;
