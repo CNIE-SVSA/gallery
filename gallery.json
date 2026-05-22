@@ -10,7 +10,7 @@
       "description": "Arquivo vetorial de referência para assinaturas institucionais do CNIE",
       "uploadDate": "2026-04-08",
       "tags": ["assinatura", "vetorial", "identidade visual"],
-      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Assinaturas%20CNIE.ai"
+      "url": "https://raw.githubusercontent.com/cnie-svsa/gallery/main/images/Assinaturas%20CNIE.ai"
     },
     {
       "filename": "Barra de assinaturas.png",
@@ -18,7 +18,7 @@
       "description": "Imagem de referência para composição de barras de assinaturas institucionais",
       "uploadDate": "2026-04-08",
       "tags": ["assinatura", "barra", "institucional"],
-      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Barra%20de%20assinaturas.png"
+      "url": "https://raw.githubusercontent.com/cnie-svsa/gallery/main/images/Barra%20de%20assinaturas.png"
     },
     {
       "filename": "Logo_clara.png",
@@ -26,7 +26,7 @@
       "description": "Versão clara da logomarca do CNIE para uso em fundos escuros ou coloridos",
       "uploadDate": "2026-04-08",
       "tags": ["logo", "clara", "identidade visual"],
-      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Logo_clara.png"
+      "url": "https://raw.githubusercontent.com/cnie-svsa/gallery/main/images/Logo_clara.png"
     },
     {
       "filename": "Logo_clara_vertical.png",
@@ -34,7 +34,7 @@
       "description": "Versão clara vertical da logomarca do CNIE para materiais institucionais",
       "uploadDate": "2026-04-08",
       "tags": ["logo", "clara", "vertical", "identidade visual"],
-      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Logo_clara_vertical.png"
+      "url": "https://raw.githubusercontent.com/cnie-svsa/gallery/main/images/Logo_clara_vertical.png"
     },
     {
       "filename": "Logo_escura.png",
@@ -42,7 +42,7 @@
       "description": "Versão escura da logomarca do CNIE para uso em fundos claros",
       "uploadDate": "2026-04-08",
       "tags": ["logo", "escura", "identidade visual"],
-      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Logo_escura.png"
+      "url": "https://raw.githubusercontent.com/cnie-svsa/gallery/main/images/Logo_escura.png"
     },
     {
       "filename": "Logo_escura_vertical.png",
@@ -50,7 +50,7 @@
       "description": "Versão escura vertical da logomarca do CNIE para materiais institucionais",
       "uploadDate": "2026-04-08",
       "tags": ["logo", "escura", "vertical", "identidade visual"],
-      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Logo_escura_vertical.png"
+      "url": "https://raw.githubusercontent.com/cnie-svsa/gallery/main/images/Logo_escura_vertical.png"
     },
     {
       "filename": "Logo_rgb_colorida.png",
@@ -58,7 +58,7 @@
       "description": "Versão colorida em RGB da logomarca do CNIE para uso digital",
       "uploadDate": "2026-04-08",
       "tags": ["logo", "rgb", "colorida", "digital"],
-      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Logo_rgb_colorida.png"
+      "url": "https://raw.githubusercontent.com/cnie-svsa/gallery/main/images/Logo_rgb_colorida.png"
     },
     {
       "filename": "Logo_rgb_colorida_icone.png",
@@ -66,7 +66,7 @@
       "description": "Versão em ícone da marca CNIE em padrão RGB colorido",
       "uploadDate": "2026-04-08",
       "tags": ["ícone", "logo", "rgb", "colorida"],
-      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Logo_rgb_colorida_icone.png"
+      "url": "https://raw.githubusercontent.com/cnie-svsa/gallery/main/images/Logo_rgb_colorida_icone.png"
     },
     {
       "filename": "barra_neutra.png",
@@ -74,7 +74,7 @@
       "description": "Imagem de referência para painéis e relatórios",
       "uploadDate": "2026-04-08",
       "tags": ["referência", "painel", "relatório"],
-      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/barra_neutra.png"
+      "url": "https://raw.githubusercontent.com/cnie-svsa/gallery/main/images/barra_neutra.png"
     },
     {
       "filename": "barra_site_cnie.png",
@@ -82,7 +82,7 @@
       "description": "Imagem de referência para composição visual do site do CNIE",
       "uploadDate": "2026-04-08",
       "tags": ["barra", "site", "cnie", "identidade visual"],
-      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/barra_site_cnie.png"
+      "url": "https://raw.githubusercontent.com/cnie-svsa/gallery/main/images/barra_site_cnie.png"
     },
     {
       "filename": "logo_fundo_rgb.png",
@@ -90,7 +90,7 @@
       "description": "Versão da logomarca do CNIE com fundo em padrão RGB para uso digital",
       "uploadDate": "2026-04-08",
       "tags": ["logo", "fundo", "rgb", "digital"],
-      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/logo_fundo_rgb.png"
+      "url": "https://raw.githubusercontent.com/cnie-svsa/gallery/main/images/logo_fundo_rgb.png"
     },
     {
       "filename": "Barra_de_assinaturas.png",
@@ -98,7 +98,7 @@
       "description": "Versão da barra de assinatura padronizada para uso digital durante período eleitoral",
       "uploadDate": "2026-05-22",
       "tags": ["assinatura", "barra", "institucional"],
-      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Barra_de_assinaturas.png"
+      "url": "https://raw.githubusercontent.com/cnie-svsa/gallery/main/images/Barra_de_assinaturas.png"
     }
   ]
 }
