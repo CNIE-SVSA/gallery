@@ -4,19 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galeria de Imagens · CNIE</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
+  <link href="https://fonts.cdnfonts.com/css/rawline" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header class="site-header">
     <div class="header-inner">
       <div class="header-brand">
-        <span class="brand-label">CNIE · SVS/MS</span>
+        <span class="brand-label">SVS · Ministério da Saúde</span>
         <h1>Galeria de Imagens</h1>
+        <p class="brand-sub">CNIE — Centro Nacional de Inteligência Epidemiológica e Vigilância Genômica</p>
       </div>
       <p class="header-sub">Repositório público de imagens para painéis e relatórios de vigilância epidemiológica</p>
+    </div>
+    <div class="header-deco" aria-hidden="true">
+      <span class="deco-node"></span>
+      <span class="deco-node"></span>
+      <span class="deco-node"></span>
+      <span class="deco-node"></span>
+      <span class="deco-node"></span>
     </div>
   </header>
 
@@ -33,6 +41,16 @@
       <span>Links públicos via GitHub Pages &amp; raw.githubusercontent.com</span>
     </div>
   </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização ampliada">
+    <div class="lb-backdrop"></div>
+    <div class="lb-content">
+      <button class="lb-close" aria-label="Fechar">✕</button>
+      <img class="lb-img" src="" alt="">
+      <p class="lb-caption"></p>
+    </div>
+  </div>
 
   <script src="gallery.js"></script>
 </body>

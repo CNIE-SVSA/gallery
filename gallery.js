@@ -5,7 +5,7 @@
 const BASE_URL = 'https://raw.githubusercontent.com/cnie-int/gallery/main/images/';
 
 let allImages = [];
-let activeTag = null;
+let activeTag  = null;
 
 /* ── Bootstrap ── */
 document.addEventListener('DOMContentLoaded', () => {
@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error(err);
     });
 
-  buildLightbox();
+  // Lightbox já está no HTML — só conecta os eventos
+  initLightbox();
 });
 
 /* ── Tag cloud ── */
@@ -70,7 +71,7 @@ function renderGallery(images) {
   }
 
   images.forEach((image, i) => {
-    const url = image.url || (BASE_URL + image.filename);
+    const url  = image.url || (BASE_URL + image.filename);
     const item = document.createElement('div');
     item.className = 'gallery-item';
     item.style.animationDelay = `${i * 60}ms`;
@@ -107,7 +108,10 @@ function renderGallery(images) {
       navigator.clipboard.writeText(btn.dataset.copy).then(() => {
         btn.textContent = '✓ Copiado!';
         btn.classList.add('copied');
-        setTimeout(() => { btn.textContent = '⎘ Copiar link'; btn.classList.remove('copied'); }, 2000);
+        setTimeout(() => {
+          btn.textContent = '⎘ Copiar link';
+          btn.classList.remove('copied');
+        }, 2000);
       });
     });
 
@@ -115,19 +119,10 @@ function renderGallery(images) {
   });
 }
 
-/* ── Lightbox ── */
-function buildLightbox() {
-  const lb = document.createElement('div');
-  lb.id = 'lightbox';
-  lb.innerHTML = `
-    <div class="lb-backdrop"></div>
-    <div class="lb-content">
-      <button class="lb-close" aria-label="Fechar">&times;</button>
-      <img class="lb-img" src="" alt="">
-      <div class="lb-caption"></div>
-    </div>
-  `;
-  document.body.appendChild(lb);
+/* ── Lightbox — conecta ao elemento já existente no HTML ── */
+function initLightbox() {
+  const lb = document.getElementById('lightbox');
+  if (!lb) return;
 
   lb.querySelector('.lb-backdrop').addEventListener('click', closeLightbox);
   lb.querySelector('.lb-close').addEventListener('click', closeLightbox);
@@ -136,7 +131,7 @@ function buildLightbox() {
 
 function openLightbox(url, title) {
   const lb = document.getElementById('lightbox');
-  lb.querySelector('.lb-img').src = url;
+  lb.querySelector('.lb-img').src         = url;
   lb.querySelector('.lb-caption').textContent = title;
   lb.classList.add('open');
   document.body.style.overflow = 'hidden';

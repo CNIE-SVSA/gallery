@@ -1,30 +1,48 @@
 /* =========================================================
    Gallery · CNIE — style.css
-   Design: editorial institucional — branco + azul petróleo
+   Identidade Visual: Manual IDV CNIE / SVS / Ministério da Saúde
+   Paleta: roxos institucionais + teais + Rawline
    ========================================================= */
 
+/* ── Tokens IDV ── */
 :root {
-  --c-bg:        #f5f4f0;
-  --c-surface:   #ffffff;
-  --c-ink:       #1a1a2e;
-  --c-ink-mid:   #4a4a6a;
-  --c-ink-soft:  #8888a8;
-  --c-accent:    #0d4f6e;       /* azul petróleo */
-  --c-accent-2:  #1a7a9e;
-  --c-tag-bg:    #e8f4fa;
-  --c-tag-ink:   #0d4f6e;
-  --c-rule:      #dddde8;
-  --c-copy-ok:   #1b7a4a;
-  --r-card:      10px;
-  --shadow-card: 0 2px 8px rgba(13,79,110,.08), 0 6px 24px rgba(13,79,110,.06);
-  --shadow-hover: 0 8px 32px rgba(13,79,110,.16);
-  --font-display: 'DM Serif Display', Georgia, serif;
-  --font-body:    'DM Sans', system-ui, sans-serif;
+  /* Cores primárias IDV */
+  --cnie-purple-900: #443794;   /* R68 G55 B148 — primária principal */
+  --cnie-purple-700: #5D50A0;   /* R93 G80 B160 */
+  --cnie-purple-500: #7E80BD;   /* R126 G128 B189 */
+  --cnie-violet-700: #7C51A0;   /* R124 G81 B160 */
+  --cnie-violet-500: #8B63A9;   /* R139 G99 B169 */
+  --cnie-mint:       #80C9A4;   /* R128 G201 B164 */
+  --cnie-teal-500:   #3697AF;   /* R54 G151 B175 */
+  --cnie-teal-700:   #007492;   /* R0 G116 B146 */
+  --cnie-teal-900:   #26688F;   /* R38 G104 B143 */
+
+  /* Semânticos */
+  --c-bg:         #f4f3f9;
+  --c-surface:    #ffffff;
+  --c-ink:        #1a1630;
+  --c-ink-mid:    #3d3667;
+  --c-ink-soft:   #7E80BD;
+  --c-accent:     var(--cnie-purple-900);
+  --c-accent-2:   var(--cnie-purple-700);
+  --c-accent-teal: var(--cnie-teal-700);
+  --c-tag-bg:     #ece9f8;
+  --c-tag-ink:    var(--cnie-purple-900);
+  --c-rule:       #dddaf0;
+  --c-copy-ok:    var(--cnie-teal-700);
+
+  /* Layout */
+  --r-card:       10px;
+  --shadow-card:  0 2px 8px rgba(68,55,148,.09), 0 6px 24px rgba(68,55,148,.06);
+  --shadow-hover: 0 8px 32px rgba(68,55,148,.18);
   --transition:   .22s cubic-bezier(.4,0,.2,1);
+
+  /* Tipografia IDV: Rawline */
+  --font-display: 'Rawline', 'Trebuchet MS', system-ui, sans-serif;
+  --font-body:    'Rawline', 'Trebuchet MS', system-ui, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -38,43 +56,81 @@ body {
 
 /* ── Header ── */
 .site-header {
-  background: var(--c-accent);
+  background: var(--cnie-purple-900);
   color: #fff;
-  padding: 48px 24px 40px;
-  border-bottom: 3px solid var(--c-accent-2);
+  padding: 52px 24px 44px;
+  border-bottom: 4px solid var(--cnie-teal-700);
+  position: relative;
+  overflow: hidden;
 }
+
+/* Detalhe geométrico decorativo — remete ao logo CNIE */
+.header-deco {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.deco-node {
+  position: absolute;
+  border-radius: 4px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.08);
+  transform: rotate(12deg);
+}
+
+.deco-node:nth-child(1) { width: 80px; height: 80px; right: 12%; top: -20px; }
+.deco-node:nth-child(2) { width: 50px; height: 50px; right: 8%;  top: 55px; background: rgba(128,201,164,.12); }
+.deco-node:nth-child(3) { width: 36px; height: 36px; right: 18%; top: 40px; }
+.deco-node:nth-child(4) { width: 100px; height: 100px; right: 22%; top: -40px; border-radius: 8px; }
+.deco-node:nth-child(5) { width: 24px; height: 24px; right: 6%;  top: 20px; background: rgba(54,151,175,.15); }
 
 .header-inner {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .brand-label {
   display: inline-block;
   font-family: var(--font-body);
-  font-size: .75rem;
+  font-size: .7rem;
   font-weight: 600;
-  letter-spacing: .12em;
+  letter-spacing: .18em;
   text-transform: uppercase;
-  opacity: .7;
+  color: var(--cnie-mint);
   margin-bottom: 10px;
 }
 
 .site-header h1 {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 5vw, 3.2rem);
-  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
   line-height: 1.1;
   letter-spacing: -.01em;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.brand-sub {
+  font-size: .82rem;
+  font-weight: 400;
+  color: var(--cnie-purple-500);
+  letter-spacing: .01em;
+  margin-bottom: 14px;
 }
 
 .header-sub {
-  font-size: .95rem;
+  font-size: .9rem;
   font-weight: 300;
-  opacity: .8;
-  max-width: 520px;
-  line-height: 1.55;
+  color: rgba(255,255,255,.72);
+  max-width: 540px;
+  line-height: 1.6;
+  border-left: 3px solid var(--cnie-teal-700);
+  padding-left: 14px;
+  margin-top: 4px;
 }
 
 /* ── Main ── */
@@ -99,10 +155,11 @@ body {
 
 .tag-btn {
   font-family: var(--font-body);
-  font-size: .8rem;
-  font-weight: 500;
-  letter-spacing: .04em;
-  padding: 6px 16px;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: 6px 18px;
   border: 1.5px solid var(--c-rule);
   border-radius: 20px;
   background: var(--c-surface);
@@ -114,6 +171,7 @@ body {
 .tag-btn:hover {
   border-color: var(--c-accent);
   color: var(--c-accent);
+  background: var(--c-tag-bg);
 }
 
 .tag-btn.active {
@@ -139,8 +197,8 @@ body {
   display: flex;
   flex-direction: column;
   opacity: 0;
-  transform: translateY(16px);
-  animation: fadeUp .4s var(--transition) forwards;
+  transform: translateY(18px);
+  animation: fadeUp .42s var(--transition) forwards;
   transition: box-shadow var(--transition), transform var(--transition);
 }
 
@@ -153,13 +211,22 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Barra de cor superior do card — ID visual */
+.gallery-item::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background: linear-gradient(90deg, var(--cnie-purple-900), var(--cnie-teal-700));
+  flex-shrink: 0;
+}
+
 /* Image wrapper */
 .img-wrap {
   position: relative;
   overflow: hidden;
   cursor: zoom-in;
   aspect-ratio: 16/9;
-  background: var(--c-bg);
+  background: var(--c-tag-bg);
 }
 
 .img-wrap img {
@@ -167,13 +234,13 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform .4s var(--transition);
+  transition: transform .42s var(--transition);
 }
 
 .img-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(13,79,110,.45);
+  background: rgba(68,55,148,.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,16 +268,17 @@ body {
 
 .card-title {
   font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 400;
+  font-size: 1.08rem;
+  font-weight: 600;
   color: var(--c-ink);
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 .card-desc {
   font-size: .875rem;
+  font-weight: 300;
   color: var(--c-ink-mid);
-  line-height: 1.55;
+  line-height: 1.6;
   margin-top: 2px;
 }
 
@@ -218,16 +286,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .tag {
   display: inline-block;
   background: var(--c-tag-bg);
   color: var(--c-tag-ink);
-  font-size: .72rem;
-  font-weight: 600;
-  letter-spacing: .05em;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .08em;
   text-transform: uppercase;
   padding: 3px 10px;
   border-radius: 4px;
@@ -237,14 +305,15 @@ body {
 .card-actions {
   display: flex;
   gap: 8px;
-  margin-top: 12px;
+  margin-top: 14px;
   flex-wrap: wrap;
 }
 
 .btn {
   font-family: var(--font-body);
-  font-size: .8rem;
+  font-size: .78rem;
   font-weight: 600;
+  letter-spacing: .04em;
   padding: 8px 16px;
   border-radius: 6px;
   border: none;
@@ -253,33 +322,41 @@ body {
   transition: var(--transition);
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
   white-space: nowrap;
 }
 
 .btn-view {
-  background: var(--c-accent);
+  background: var(--cnie-purple-900);
   color: #fff;
 }
-.btn-view:hover { background: var(--c-accent-2); }
+
+.btn-view:hover {
+  background: var(--cnie-purple-700);
+}
 
 .btn-copy {
   background: transparent;
-  color: var(--c-accent);
-  border: 1.5px solid var(--c-accent);
+  color: var(--cnie-teal-700);
+  border: 1.5px solid var(--cnie-teal-700);
 }
-.btn-copy:hover { background: var(--c-tag-bg); }
+
+.btn-copy:hover {
+  background: #e8f5f9;
+}
+
 .btn-copy.copied {
-  background: var(--c-copy-ok);
-  border-color: var(--c-copy-ok);
+  background: var(--cnie-teal-700);
+  border-color: var(--cnie-teal-700);
   color: #fff;
 }
 
 .card-date {
-  font-size: .75rem;
+  font-size: .72rem;
+  font-weight: 400;
   color: var(--c-ink-soft);
   margin-top: auto;
-  padding-top: 10px;
+  padding-top: 12px;
   border-top: 1px solid var(--c-rule);
 }
 
@@ -304,8 +381,8 @@ body {
 .lb-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(10,16,30,.88);
-  backdrop-filter: blur(6px);
+  background: rgba(20,14,60,.9);
+  backdrop-filter: blur(8px);
 }
 
 .lb-content {
@@ -328,14 +405,17 @@ body {
   max-height: 80vh;
   object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 16px 64px rgba(0,0,0,.6);
+  box-shadow: 0 16px 64px rgba(0,0,0,.7);
+  border: 2px solid rgba(128,201,164,.25);
 }
 
 .lb-caption {
-  color: rgba(255,255,255,.8);
+  color: rgba(255,255,255,.75);
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: .95rem;
+  font-weight: 400;
   text-align: center;
+  letter-spacing: .02em;
 }
 
 .lb-close {
@@ -345,9 +425,9 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: var(--c-accent);
+  background: var(--cnie-teal-700);
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
   display: flex;
@@ -357,13 +437,13 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,.4);
 }
 
-.lb-close:hover { background: var(--c-accent-2); }
+.lb-close:hover { background: var(--cnie-teal-500); }
 
 /* ── States ── */
 .empty, .error {
   grid-column: 1/-1;
   text-align: center;
-  padding: 60px 20px;
+  padding: 64px 20px;
   color: var(--c-ink-soft);
   font-size: .95rem;
 }
@@ -372,10 +452,13 @@ body {
 
 /* ── Footer ── */
 .site-footer {
-  background: var(--c-ink);
-  color: rgba(255,255,255,.5);
-  padding: 22px 24px;
-  font-size: .8rem;
+  background: var(--cnie-purple-900);
+  color: rgba(255,255,255,.45);
+  padding: 24px 24px;
+  font-size: .78rem;
+  font-weight: 400;
+  letter-spacing: .01em;
+  border-top: 3px solid var(--cnie-teal-700);
 }
 
 .footer-inner {
@@ -389,14 +472,16 @@ body {
 }
 
 .site-footer a {
-  color: rgba(255,255,255,.75);
+  color: var(--cnie-mint);
   text-decoration: none;
+  font-weight: 600;
 }
+
 .site-footer a:hover { color: #fff; }
 
 /* ── Responsive ── */
 @media (max-width: 640px) {
-  .site-header { padding: 32px 20px 28px; }
+  .site-header { padding: 36px 20px 30px; }
 
   .gallery {
     grid-template-columns: 1fr;
@@ -404,4 +489,6 @@ body {
   }
 
   .footer-inner { flex-direction: column; align-items: flex-start; gap: 8px; }
+
+  .deco-node { display: none; }
 }
