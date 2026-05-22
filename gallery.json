@@ -91,6 +91,14 @@
       "uploadDate": "2026-04-08",
       "tags": ["logo", "fundo", "rgb", "digital"],
       "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/logo_fundo_rgb.png"
+    },
+    {
+      "filename": "Barra_de_assinatura.png",
+      "title": "Barra de assinatura neutra",
+      "description": "Versão da barra de assinatura padronizada para uso digital durante período eleitoral",
+      "uploadDate": "2026-05-22",
+      "tags": ["logo", "fundo", "rgb", "digital"],
+      "url": "https://raw.githubusercontent.com/cnie-int/gallery/main/images/Barra_de_assinatura.png"
     }
   ]
 }
